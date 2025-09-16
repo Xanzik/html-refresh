@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 600px;
+}
+
+main {
+    margin: 0px auto 109px;
+}
+
+li {
+    list-style: none;
+    list-style-image: url(../images/right_10025592.png);
+}
+
+.logo-image {
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+.logo-image img {
+    height: 48px;
+}
+
+.main-image {
+    margin: 0px auto 32px;
+    text-align: center;
+}
+
+.main-image img {
+    height: 329px;
+}
+
+.main-text {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0px auto 20px;
+}
+
+.text-link {
+    font-size: 15px;
+    color: #0057FF;
+}
+
+.read-on {
+    color: #1155CC;
+}
+
+.secondary-text {
+    line-height: 149%;
+    margin: 2px auto 2px;
+}
+
+.secondary-text.small {
+    font-size: 15px;
+}
+
+.secondary-text.big {
+    font-size: 16px;
+    margin: 0px auto 42px;
+}
+
+.article-head {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #FF645F;
+    color: #FFF;
+    margin: 0px auto 44px;
+    border-radius: 3px;
+    height: 27px;
+    padding: 3px 25px 4px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 10px;
+    line-height: 120%;
+}
+
+.email-link {
+    font-size: 9px;
+    color: #1155CC;
+}
+
+.unsubscribe-link {
+    font-size: 10px;
+    color: #0057FF;
+}
+
+.privacy-link {
+    font-size: 9px;
+    line-height: 156%;
+    color: #0057FF;
+    margin: 0px auto 21px;
+}
+
+footer {
+    margin: 0px auto 0px;
+    text-align: center;
+}
+
+footer img {
+    height: 20px;
+}

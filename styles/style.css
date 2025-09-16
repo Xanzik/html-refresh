@@ -21,3 +21,11 @@ button {
     background-color: #6c38cd;
     color: #d4b9f0;
 }
+
+div option:first-child {
+    color: rgb(255, 0, 0);
+}
+
+div option:last-child {
+    color: green;
+}
