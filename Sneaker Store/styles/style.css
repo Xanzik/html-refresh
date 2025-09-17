@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Intro Bold";
+    src: url(../fonts/intro_bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Intro Regular";
+    src: url(../fonts/intro_regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Intro Book";
+    src: url(../fonts/intro_book.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-color: #484283;
+    height: 500px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 0px auto 100px;
+    max-width: 1180px;
+    max-height: 66px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+    font-family: "Intro Bold", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    margin-right: auto;
+}
+
+ul {
+    font-family: "Intro Book", sans-serif;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+li {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 40px;
+}
+
+img {
+    position: absolute;
+    margin-left: 10px;
+}
+
+span {
+    margin-left: 20px;
+    margin-top: 10px;
+    position: absolute;
+    font-family: "Intro Book", sans-serif;
+    background-color: #F14F4F;
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
