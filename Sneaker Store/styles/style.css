@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -25,56 +25,167 @@ body {
 }
 
 header {
-    background-color: #484283;
-    height: 500px;
+    background: #484283;
+    color: #fff;
+    max-height: 528px;
+    margin: 0 auto 60px;
 }
 
-nav {
+h1 {
+    font-family: "Intro Regular", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    max-width: 580px;
+    line-height: 140%;
+    margin: 0 auto 20px 0;
+    text-align: start;
+}
+
+.header__top {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: start;
+    max-width: 1180px;
+    margin: 0px auto 0px;
+}
+
+.header__nav {
     display: flex;
     align-items: center;
     margin: 0px auto 100px;
-    max-width: 1180px;
     max-height: 66px;
+    max-width: 1180px;
+    width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-h2 {
+.header__logo {
     font-family: "Intro Bold", sans-serif;
     font-weight: 700;
     font-size: 30px;
-    color: #fff;
     margin-right: auto;
 }
 
-ul {
+.nav__list {
     font-family: "Intro Book", sans-serif;
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-li {
+.nav__item {
     position: relative;
     font-size: 14px;
-    color: #fff;
     margin-right: 40px;
 }
 
-img {
+.nav__cart-icon {
     position: absolute;
     margin-left: 10px;
 }
 
-span {
+.nav__cart-count {
     margin-left: 20px;
     margin-top: 10px;
     position: absolute;
     font-family: "Intro Book", sans-serif;
-    background-color: #F14F4F;
+    background: #F14F4F;
     text-align: center;
     font-size: 14px;
-    color: #FFF;
     border-radius: 50%;
     height: 16px;
     width: 16px;
+}
+
+.header__text {
+    font-family: "Intro Book", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 480px;
+    margin: 0 auto 40px 0;
+}
+
+.header__button {
+    margin: 0 auto 100px 0;
+    padding: 22px 47px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Intro Regular", sans-serif;
+    border: none;
+    border-radius: 4px;
+    background: #F14F4F;
+    color: #fff;
+    max-width: 250px;
+    max-height: 60px;
+}
+
+.header__button:hover {
+    cursor: pointer;
+}
+
+.section__container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.catalog__title {
+    font-family: "Intro Bold", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #444b58;
+    margin: 0 auto 40px 0;
+}
+
+.catalog__container {
+    display: flex;
+    margin: 0 auto 60px;
+}
+
+.filter__container {
+    width: 280px;
+    height: 597px;
+    border-radius: 4px;
+    border: 1px solid #fff4ee;
+    background: #fff4ee;
+    margin: 0 20px auto 0;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 881px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.catalog__item {
+    width: calc(100% / 3);
+    max-width: 280px;
+}
+
+.item__text,
+.item__price {
+    color: #444b58;
+    font-weight: 400;
+}
+
+.item__text {
+    font-family: "Intro Book", sans-serif;
+    font-size: 16px;
+    margin: 10px auto 10px 0;
+}
+
+.item__price {
+    font-family: "Intro Regular", sans-serif;
+    font-size: 20px;
+    margin: 0 auto 0 0;
+}
+
+.item__image {
+    max-width: 280px;
+    max-height: 293px;
 }

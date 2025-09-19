@@ -5,29 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>SneakMax</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <h2>SneakMax</h2>
-            <ul>
-                <li>Каталог</li>
-                <li>О нас</li>
-                <li>Подбор товара</li>
-                <li>Наша команда</li>
-                <li>Доставка и оплата</li>
-                <li>Контакты</li>
-                <li>Корзина
-                    <img src="./images/Vector.svg" alt="Cart">
-                    <span>1</span>
-                </li>
-
-            </ul>
-
-        </nav>
+        <div class="header__top">
+            <nav class="header__nav">
+                <h2 class="header__logo">SneakMax</h2>
+                <ul class="nav__list">
+                    <li class="nav__item">Каталог</li>
+                    <li class="nav__item">О нас</li>
+                    <li class="nav__item">Подбор товара</li>
+                    <li class="nav__item">Наша команда</li>
+                    <li class="nav__item">Доставка и оплата</li>
+                    <li class="nav__item">Контакты</li>
+                    <li class="nav__item">Корзина
+                        <img src="./images/Vector.svg" alt="Cart" class="nav__cart-icon">
+                        <span class="nav__cart-count">1</span>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Кроссовки известных брендов с доставкой по России и СНГ</h1>
+            <p class="header__text">Мы продаем кроссовки брендов Nike, Adidas, Puma, Rebook, Converse и многие другие по
+                низким ценам</p>
+            <button class="header__button">Перейти к покупкам</button>
+        </div>
     </header>
+    <main>
+        <section class="section__container">
+            <h2 class="catalog__title">Каталог</h2>
+            <div class="catalog__container">
+                <div class="filter__container"></div>
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak image" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img src="./images/sneak.svg" alt="sneak" class="item__image">
+                        <p class="item__text">Кроссовки Nike Air Force 1 '07 QS</p>
+                        <p class="item__price">11 000 р</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
