@@ -3,7 +3,14 @@
     --color-logo: #598d66;
     --color-text: #2C2D35;
     --color-subtext: #86928b;
+    --color-border: #c3d1c6;
     --font-family: "Raleway", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -22,4 +29,5 @@ a {
 
 ul {
     padding: 0;
+    margin: 0;
 }
