@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    margin: 0 39px 70px;
+    margin: 0 auto 70px;
     max-width: 1440px;
     gap: 30px;
 }
@@ -66,9 +66,13 @@
 }
 
 @media (max-width: 700px) {
+    .hero {
+        max-width: calc(700px - 33px * 2);
+        margin: 0 33px 70px;
+    }
+
     .hero__image {
         max-width: 195px;
-        margin: 0 33px 70px;
     }
 
     .hero__title {

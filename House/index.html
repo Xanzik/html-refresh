@@ -11,37 +11,119 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/promo.css">
+    <title>Ink. House</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header__wrapper">
             <div class="logo">
-                <img src="images/Star.svg" alt="logo image" class="logo__image">
-                <h2 class="logo__text">Ink. House</h2>
+                <img src="images/icons/Star.svg" alt="logo image" class="logo__image">
+                <h3 class="logo__text">Ink. House</h3>
             </div>
             <nav class="header__nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#"><img src="images/burger.svg" alt="burger menu image"></a></li>
+                    <li class="nav__item"><a href="#"><img src="images/icons/burger.svg" alt="burger menu image"></a>
+                    </li>
                     <li class="nav__item"><a href="#">Репродукции</a></li>
                     <li class="nav__item"><a href="#">Новинки</a></li>
                     <li class="nav__item"><a href="#">О нас</a></li>
-                    <li class="nav__item"><a href="#"><img src="images/cart.svg" alt="cart image"></a></li>
+                    <li class="nav__item"><a href="#"><img src="images/icons/cart.svg" alt="cart image"></a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section class="section hero">
             <img src="images/bird.svg" alt="bird image" class="hero__image">
             <div class="hero__content">
                 <h1 class="hero__title">Реплики картин<br />от <span class="hero__brand">Ink. House</span></h1>
                 <p class="hero__subtitle">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие
                     произведения, доступные цены.
                 </p>
-                <button class="hero__button">Продукция</button>
+                <button class="button hero__button">Продукция</button>
             </div>
+        </section>
+        <section class="section catalog">
+            <div class="catalog__wrapper">
+                <div class="catalog__top">
+                    <h2 class="catalog__logo">Репродукции</h2>
+                    <ul class="catalog__filter">
+                        <li class="filter__item"><button class="button filter__button filter__button--active"
+                                aria-pressed="true">Франция</button></li>
+                        <li class="filter__item"><button class="button filter__button">Германия</button></li>
+                        <li class="filter__item"><button class="button filter__button">Англия</button></li>
+                    </ul>
+                </div>
+                <div class="catalog__content">
+                    <ul class="content__list">
+                        <li class="content__item">
+                            <img src="images/content/amur-hunt.jpg" alt="Amur Hunt" class="content__image">
+                            <p class="content__author">Марсель Руссо</p>
+                            <p class="content__title">Охота Амура</p>
+                            <p class="content__description">Холст, масло (50х80)</p>
+                            <p class="content__price">14 500 руб</p>
+                            <button class="button content__button">В корзину</button>
+                        </li>
+                        <li class="content__item">
+                            <img src="images/content/girl-with-dog.jpg" alt="Girl with dog" class="content__image">
+                            <p class="content__author">Анри Селин</p>
+                            <p class="content__title">Дама с собачкой</p>
+                            <p class="content__description">Акрил, бумага (50х80)</p>
+                            <p class="content__price">16 500 руб</p>
+                            <button class="button content__button">В корзину</button>
+                        </li>
+                        <li class="content__item">
+                            <img src="images/content/procedure.jpg" alt="Procedure" class="content__image">
+                            <p class="content__author">Франсуа Дюпон</p>
+                            <p class="content__title">Процедура</p>
+                            <p class="content__description">Цветная литография (40х60)</p>
+                            <p class="content__price">20 000 руб</p>
+                            <button class="button content__button">В корзину</button>
+                        </li>
+                        <li class="content__item">
+                            <img src="images/content/rose.jpg" alt="Rose" class="content__image">
+                            <p class="content__author">Луи Детуш</p>
+                            <p class="content__title">Роза</p>
+                            <p class="content__description">Бумага, акрил (50х80)</p>
+                            <p class="content__price">12 000 руб</p>
+                            <button class="button content__button">В корзину</button>
+                        </li>
+                        <li class="content__item">
+                            <img src="images/content/bird-eat.jpg" alt="Bird eat" class="content__image">
+                            <p class="content__author">Франсуа Дюпон</p>
+                            <p class="content__title">Птичья трапеза</p>
+                            <p class="content__description">Цветная литография (40х60)</p>
+                            <p class="content__price">22 500 руб</p>
+                            <button class="button content__button">В корзину</button>
+                        </li>
+                        <li class="content__item">
+                            <img src="images/content/fish-theme.jpg" alt="Fish theme" class="content__image">
+                            <p class="content__author">Пьер Моранж</p>
+                            <p class="content__title">Пейзаж с рыбой</p>
+                            <p class="content__description">Цветная литография (40х60)</p>
+                            <p class="content__price">20 000 руб</p>
+                            <button class="button content__button">В корзину</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section promo">
+            <div class="promo__title"><img src="images/icons/Star 2.svg" alt="star icon">
+                <span class="title__text">Новая коллекция <br />французских авторов</span>
+            </div>
+            <p class="promo__text">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым
+                свершениям, которые, в
+                свою очередь, должны
+                быть заблокированы в рамках своих собственных рациональных ограничений.<br /><br />
+                Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую
+                востребованность направлений
+                прогрессивного развития.
+            </p>
+            <button class="promo__button">Ознакомиться</button>
         </section>
     </main>
 

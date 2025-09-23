@@ -4,6 +4,11 @@
     --color-text: #2C2D35;
     --color-subtext: #86928b;
     --color-border: #c3d1c6;
+    --color-promo-title: #F4F6F5;
+    --color-promo-text: #fff;
+    --color-promo-button: #eedb6d;
+    --color-active: #376b44;
+    --color-primary: #d4e8d9;
     --font-family: "Raleway", sans-serif;
 }
 
