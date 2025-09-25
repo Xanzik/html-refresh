@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Archangelsk";
+    src: url("../fonts/Archangelsk.ttf");
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Archangelsk", sans-serif;
+    --bg-learn-more: #f8f200;
+    --bg-primary: #000;
+    --text-color: #777;
+    --text-link-color: #52bedc;
+}
+
+a {
+    outline: none;
+}

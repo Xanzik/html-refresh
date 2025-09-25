@@ -1,0 +1,105 @@
+.header {
+    background: url(../images/background11.jpg) no-repeat center center;
+    background-position-x: center;
+    background-position-y: initial;
+    max-width: 1920px;
+    min-height: 980px;
+    margin: 0 auto 70px;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 980px;
+    max-width: 1280px;
+    padding: 20px 36px 0 36px;
+    margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    padding: 0;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.header__cta {
+    margin: auto 0 0 auto;
+    padding: 69px;
+    background: url(../images/Rectangle.svg) no-repeat;
+    background-size: contain;
+}
+
+.header__button {
+    background: var(--bg-primary);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    color: var(--bg-learn-more);
+    padding: 19px 50px;
+    border: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 790px) {
+    .header__nav {
+        flex-direction: column;
+    }
+
+    .header__cta {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0 0 auto;
+        padding: 29px 13px;
+        max-width: 320px;
+    }
+
+    .header__button {
+        font-size: 20px;
+        max-width: 244px;
+        padding: 10px 50px;
+        line-height: 200%;
+    }
+}
+
+@media (max-width: 490px) {
+    .header {
+        min-height: 763px;
+
+    }
+
+    .header__wrapper {
+        min-height: 763px;
+        padding: 12px 0 0 0;
+    }
+
+    .header__cta {
+        background: url(../images/Rectangle320.svg) no-repeat;
+        padding: 29px 0;
+        min-width: 320px;
+    }
+
+    .nav__list {
+        gap: 30px;
+    }
+
+    .list__item img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        background: url(../images/bg320.png);
+    }
+}
