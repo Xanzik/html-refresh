@@ -7,11 +7,21 @@
     font-family: var(--second-family);
     font-size: 62px;
     font-weight: 400;
+    margin: 0;
+}
+
+.title-header,
+.title-hero {
     margin: 0 0 25px 0;
 }
 
 .title-header {
     max-width: 484px;
+}
+
+.title-promo {
+    color: var(--text-promo-color);
+    margin: 55px 0 0 0;
 }
 
 .logo {
@@ -33,6 +43,73 @@
     font-weight: 700;
 }
 
+.text-promo {
+    color: var(--text-promo-color);
+}
+
+.button {
+    background: var(--bg-primary);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    color: var(--bg-learn-more);
+    padding: 15px 50px;
+    border: 0;
+    white-space: nowrap;
+}
+
+.button-secondary {
+    background: var(--bg-learn-more);
+    color: var(--bg-primary);
+    font-size: 18px;
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+.checkbox__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: var(--font-family);
+    color: var(--text-promo-color);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.checkbox {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.checkbox__mark {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: var(--bg-primary);
+    border: 1px solid var(--text-color);
+}
+
+.checkbox:checked+.checkbox__mark::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/checkbox.svg');
+    background-size: cover;
+    display: block;
+}
+
 @media (max-width:1024px) {
     .text {
         max-width: 788px;
@@ -49,5 +126,19 @@
     .logo {
         max-width: 200px;
         max-height: 50px;
+    }
+
+    .title-hero {
+        font-size: 30px;
+    }
+
+    .title-hero,
+    .text-hero {
+        padding: 0 12px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 200%;
     }
 }

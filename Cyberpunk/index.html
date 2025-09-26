@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/component.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/promo.css">
     <title>Cyberpunk 2077</title>
 </head>
 
@@ -38,8 +39,8 @@
     <main class="main">
         <section class="section">
             <div class="hero">
-                <p class="title hero__title">Найт-Сити изменит тебя навсегда!</p>
-                <p class="text hero__text"><a class="text text-link">Cyberpunk 2077</a> — приключенческая ролевая игра,
+                <p class="title title-hero">Найт-Сити изменит тебя навсегда!</p>
+                <p class="text text-hero"><a class="text text-link">Cyberpunk 2077</a> — приключенческая ролевая игра,
                     действие которой
                     происходит в
                     мегаполисе Найт-Сити, где власть, роскошь и
@@ -50,10 +51,45 @@
                     ход сюжета и всё, что тебя окружает.</p>
                 <div class="hero__container">
                     <div class="hero__left">
-                        <img src="images/hero-image1.png" alt="" class="hero__image"><img src="images/hero-image2.png"
-                            alt="" class="hero__image">
+                        <img src="images/hero-image1.png" alt="Game Footage" class="hero__image"><img
+                            src="images/hero-image2.png" alt="Game Footage" class="hero__image">
                     </div>
-                    <img src="images/hero-image3.png" alt="" class="hero__image hero__right">
+                    <img src="images/hero-image3.png" alt="Game Footage" class="hero__image hero__right">
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="promo">
+                <div class="promo__wrapper">
+                    <div class="promo__title">
+                        <img src="images/promo-icon.svg" alt="Promo icon with the inscription «Promotion»"
+                            class="promo__icon">
+                        <p class="title title-promo">Играй и выигрывай!</p>
+                    </div>
+                    <p class="text text-promo">Играй в <a class="text text-link">Cyberpunk 2077</a> и получи возможность
+                        выиграть консоль <a class="text text-link">Xbox Series X</a>
+                        или <a class="text text-link">Sony PlayStation 5!</a> Заполни форму ниже и
+                        приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! &#59;&#41;
+                    </p>
+                    <div class="promo__container">
+                        <form action="" class="form promo__form">
+                            <input type="text" name="name" id="name" placeholder="Как тебя зовут?">
+                            <input type="email" name="email" id="email" placeholder="Твой e-mail">
+                            <button class="form__button form__button--file">
+                                <span class="form__button-title">Прикрепить скриншот</span>
+                                <span class="form__button-subtitle">.png / .jpg / .pdf</span>
+                            </button>
+                            <button type="submit"
+                                class="button button-secondary form__button form__button--submit">Отправить</button>
+                            <label for="agree" class="checkbox__container">
+                                <input type="checkbox" name="agree" id="agree" class="checkbox">
+                                <span class="checkbox__mark"></span>
+                                Согласен на обработку персональных
+                                данных</label>
+                        </form>
+                        <img src="images/promo-image.png" alt="Image of xbox series x and sony playstation 5"
+                            class="promo__image">
+                    </div>
                 </div>
             </div>
         </section>

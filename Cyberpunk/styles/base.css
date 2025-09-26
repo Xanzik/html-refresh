@@ -13,6 +13,7 @@ body {
     --bg-primary: #000;
     --text-color: #777;
     --text-link-color: #52bedc;
+    --text-promo-color: #fff;
 }
 
 a {
