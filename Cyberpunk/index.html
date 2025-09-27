@@ -60,37 +60,41 @@
         </section>
         <section class="section">
             <div class="promo">
+                <div class="promo__top"></div>
                 <div class="promo__wrapper">
-                    <div class="promo__title">
-                        <img src="images/promo-icon.svg" alt="Promo icon with the inscription «Promotion»"
-                            class="promo__icon">
-                        <p class="title title-promo">Играй и выигрывай!</p>
+                    <div class="promo__container-top">
+                        <div class="promo__title">
+                            <img src="images/promo-icon.svg" alt="Promo icon with the inscription «Promotion»"
+                                class="promo__icon">
+                            <p class="title title-promo">Играй и выигрывай!</p>
+                        </div>
+                        <p class="text text-promo">Играй в <a class="text text-link">Cyberpunk 2077</a> и получи
+                            возможность
+                            выиграть консоль <a class="text text-link">Xbox Series X</a>
+                            или <a class="text text-link">Sony PlayStation 5!</a> Заполни форму ниже и
+                            приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи!
+                            &#59;&#41;
+                        </p>
                     </div>
-                    <p class="text text-promo">Играй в <a class="text text-link">Cyberpunk 2077</a> и получи возможность
-                        выиграть консоль <a class="text text-link">Xbox Series X</a>
-                        или <a class="text text-link">Sony PlayStation 5!</a> Заполни форму ниже и
-                        приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! &#59;&#41;
-                    </p>
-                    <div class="promo__container">
-                        <form action="" class="form promo__form">
-                            <input type="text" name="name" id="name" placeholder="Как тебя зовут?">
-                            <input type="email" name="email" id="email" placeholder="Твой e-mail">
-                            <button class="form__button form__button--file">
-                                <span class="form__button-title">Прикрепить скриншот</span>
-                                <span class="form__button-subtitle">.png / .jpg / .pdf</span>
-                            </button>
-                            <button type="submit"
-                                class="button button-secondary form__button form__button--submit">Отправить</button>
-                            <label for="agree" class="checkbox__container">
-                                <input type="checkbox" name="agree" id="agree" class="checkbox">
-                                <span class="checkbox__mark"></span>
-                                Согласен на обработку персональных
-                                данных</label>
-                        </form>
-                        <img src="images/promo-image.png" alt="Image of xbox series x and sony playstation 5"
-                            class="promo__image">
-                    </div>
+                    <form action="" class="form promo__form" id="form">
+                        <input type="text" name="name" id="name" placeholder="Как тебя зовут?">
+                        <input type="email" name="email" id="email" placeholder="Твой e-mail">
+                        <button class="form__button form__button--file">
+                            <span class="form__button-title">Прикрепить скриншот</span>
+                            <span class="form__button-subtitle">.png / .jpg / .pdf</span>
+                        </button>
+                        <button type="submit"
+                            class="button button-secondary form__button form__button--submit">Отправить</button>
+                        <label for="agree" class="checkbox__container">
+                            <input type="checkbox" name="agree" id="agree" class="checkbox">
+                            <span class="checkbox__mark"></span>
+                            Согласен на обработку персональных
+                            данных</label>
+                    </form>
+                    <img src="images/promo-image.png" alt="Image of xbox series x and sony playstation 5"
+                        class="promo__image promo__right" id="promo__image">
                 </div>
+                <div class="promo__bottom"></div>
             </div>
         </section>
     </main>

@@ -81,6 +81,8 @@
     position: absolute;
     cursor: pointer;
     opacity: 0;
+    height: 0;
+    width: 0;
 }
 
 .checkbox__mark {
@@ -114,6 +116,14 @@
     .text {
         max-width: 788px;
     }
+
+    .title-promo {
+        margin: 0 0 15px 0;
+    }
+
+    .text-promo {
+        max-width: 460px;
+    }
 }
 
 @media (max-width: 790px) {
@@ -128,7 +138,8 @@
         max-height: 50px;
     }
 
-    .title-hero {
+    .title-hero,
+    .title-promo {
         font-size: 30px;
     }
 

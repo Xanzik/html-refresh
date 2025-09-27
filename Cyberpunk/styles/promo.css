@@ -2,10 +2,46 @@
     background: var(--bg-primary);
 }
 
+.promo__top {
+    background: url(../images/promo-top.png);
+}
+
+.promo__bottom {
+    background: url(../images/promo-bottom.png);
+}
+
+.promo__top,
+.promo__bottom {
+    min-height: 70px;
+}
+
 .promo__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "top top"
+        "top top"
+        "form image";
     max-width: 1280px;
     margin: 0 auto;
-    padding: 15px 36px 0;
+    padding: 15px 36px 70px;
+    gap: 25px;
+}
+
+.promo__container-top {
+    grid-area: top;
+}
+
+.promo__form {
+    grid-area: form;
+    max-height: 383px;
+    align-self: self-end;
+}
+
+.promo__image {
+    grid-area: image;
+    align-self: center;
 }
 
 .promo__title {
@@ -18,23 +54,23 @@
     height: 132px;
 }
 
-.promo__container {
-    display: flex;
-    gap: 32px;
-}
-
 .promo__image {
-    height: 100%;
+    height: auto;
     width: 100%;
+    max-width: 788px;
     min-height: 0;
     min-width: 0;
+}
+
+.promo__bottom {
+    display: flex;
 }
 
 .promo__form {
     display: flex;
     flex-direction: column;
-    min-width: 460px;
-    flex-shrink: 0;
+    width: 460px;
+    max-width: 460px;
 }
 
 .promo__form input {
@@ -80,4 +116,63 @@
     font-weight: 300;
     font-size: 12px;
     color: var(--text-promo-color);
+}
+
+@media (max-width:1024px) {
+    .promo__title {
+        flex-direction: column;
+        gap: 15px;
+        max-width: 460px;
+    }
+
+    .promo__wrapper {
+        grid-template-areas:
+            "top image"
+            "top image"
+            "form image";
+    }
+
+    .promo__image {
+        content: url(../images/promo-image1024.png);
+    }
+}
+
+@media (max-width: 790px) {
+    .promo__form {
+        max-width: 296px;
+    }
+
+    .promo__image {
+        max-width: 296px;
+    }
+}
+
+@media (max-width: 490px) {
+    .promo__wrapper {
+        grid-template-areas:
+            "image image"
+            "top top"
+            "form form";
+        padding: 12px 6px 70px;
+        max-width: 296px;
+        gap: 0;
+    }
+
+    .promo__container-top {
+        margin-bottom: 54px;
+    }
+
+    .promo__icon {
+        display: none;
+    }
+
+    .promo__image {
+        content: url(../images/promo-image320.png);
+        max-width: 296px;
+        justify-self: center;
+    }
+
+    .promo__form input::placeholder {
+        font-size: 16px;
+    }
 }
