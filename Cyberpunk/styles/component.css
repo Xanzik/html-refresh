@@ -83,6 +83,7 @@
 .text-footer {
     line-height: 100%;
     color: var(--bg-primary);
+    text-align: center;
 }
 
 .button {
@@ -179,6 +180,10 @@
 @media (max-width:1024px) {
     .text {
         max-width: 788px;
+    }
+
+    .text-footer {
+        max-width: 100%;
     }
 
     .title-promo {
