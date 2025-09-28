@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/components.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<title>РУМТИБЕТ</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__wrapper">
+			<div class="header__top">
+				<img src="images/icons/rumtiber-icon.svg" alt="rumtiber icon" class="header__icon">
+				<nav class="header__nav">
+					<ul class="nav__list">
+						<li class="list__item"><a href="#">Главная</a></li>
+						<li class="list__item"><a href="#">Про гида</a></li>
+						<li class="list__item"><a href="#">Программа тура</a></li>
+						<li class="list__item"><a href="#">Стоимость</a></li>
+						<li class="list__item"><a href="#">Блог</a></li>
+						<li class="list__item"><a href="#">Контакты</a></li>
+					</ul>
+					<button class="button button-primary button-12-24">Консультация</button>
+				</nav>
+				<button class="header__menu"></button>
+			</div>
+			<h1 class="header__h1">Насладись прогулкой в горах
+				<br />с командой единомышленников
+			</h1>
+			<form class="header__search-form" action="#" method="get">
+				<div class="header__form-container">
+					<select name="location" id="location" class="header__select" required>
+						<option value="" disabled selected>Локация для тура</option>
+					</select>
+					<label for="location" class="header__label">выберите из списка</label>
+				</div>
+				<div class="header__form-container">
+					<input type="date" name="date" id="date" class="header__input" required placeholder="Дата похода">
+					<label for="date" class="header__label">укажите диапазон</label>
+				</div>
+				<div class="header__form-container">
+					<select name="participants" id="participants" class="header__select" required>
+						<option value="" disabled selected>Участники</option>
+					</select>
+					<label for="participants" class="header__label">минимум 4 человека</label>
+				</div>
+				<button class="button button-secondary button-16-36">Найти программу</button>
+			</form>
+		</div>
+	</header>
+	<main class="main"></main>
+</body>
+
+</html>

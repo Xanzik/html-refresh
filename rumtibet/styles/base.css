@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "NEXT ART";
+    src: url("/fonts/NEXT ART_Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url("/fonts/NEXT ART_Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url("/fonts/NEXT ART_SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url("/fonts/NEXT ART_Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url("/fonts/NEXT ART_Heavy.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --bg-header: url(../images/header-bg.png);
+    --arrow-down: url(../images/icons/arrow-down-icon.svg);
+    --calendar: url(../images/icons/date-icon.svg);
+    --bg-burger: url(../images/icons/burger-icon.svg);
+    --font-family: "Nunito Sans", sans-serif;
+    --second-family: "NEXT ART", sans-serif;
+    --third-family: "Inter", sans-serif;
+    --main-color: #fdfdfd;
+    --bg-button-primary: #1a3e3e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
