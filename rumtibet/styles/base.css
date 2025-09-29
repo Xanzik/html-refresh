@@ -47,7 +47,11 @@
     --second-family: "NEXT ART", sans-serif;
     --third-family: "Inter", sans-serif;
     --main-color: #fdfdfd;
+    --foreword-color: #f2be22;
+    --text-color: #18121e;
+    --text-section-list-color: #000;
     --bg-button-primary: #1a3e3e;
+    --bg-section-secondary: #f3f5f4;
 }
 
 * {

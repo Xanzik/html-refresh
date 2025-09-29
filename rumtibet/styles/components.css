@@ -31,3 +31,49 @@
 .button-16-36 {
     padding: 16px 36px;
 }
+
+.image-stack {
+    position: relative;
+    width: 526px;
+    height: 480px;
+    max-width: 480px;
+    max-height: 526px;
+}
+
+.image-stack__base,
+.image-stack__overlay {
+    width: 350px;
+    height: 400px;
+    border-radius: 24px;
+}
+
+.image-stack__overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.image-clover {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 720px) {
+    .image-stack {
+        width: 350px;
+        height: 400px;
+    }
+
+    .image-stack__base {
+        display: none;
+    }
+
+    .image-stack__overlay {
+        position: relative;
+    }
+
+    .image-clover {
+        display: none;
+    }
+}

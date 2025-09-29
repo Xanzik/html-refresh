@@ -1,8 +1,6 @@
 .header {
     background: var(--bg-header) no-repeat center center;
     background-size: cover;
-    max-width: 1920px;
-    aspect-ratio: 1920 / 985;
     margin: 0 auto;
 }
 
