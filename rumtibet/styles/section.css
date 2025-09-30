@@ -12,13 +12,18 @@
     align-items: center;
     max-width: 1180px;
     margin: 0 auto;
-    padding: 100px 16px;
+    padding: 100px 0;
 }
 
 .section__wrapper--wide {
     max-width: 1920px;
     justify-content: center;
     gap: 90px;
+}
+
+.section__wrapper--column {
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section__left {
@@ -46,13 +51,20 @@
 
 .section__foreword {
     display: flex;
-    align-self: start;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 24px;
     line-height: 83%;
     color: var(--foreword-color);
     margin-bottom: 8px;
+}
+
+.section__foreword--start {
+    align-self: start;
+}
+
+.section__foreword--center {
+    align-self: center;
 }
 
 .section__h2 {
@@ -62,6 +74,10 @@
     line-height: 120%;
     color: var(--text-color);
     margin-bottom: 40px;
+}
+
+.section__h2--mb50 {
+    margin-bottom: 50px;
 }
 
 .section__h3 {
@@ -112,19 +128,43 @@
 
 @media (max-width: 1280px) {
     .section__wrapper {
+        padding: 100px 16px;
+    }
+
+    .section__wrapper--column-reverse-1280 {
         flex-direction: column-reverse;
+    }
+
+    .section__wrapper--column-1280 {
+        flex-direction: column;
     }
 
     .section__right {
         margin-bottom: 40px;
         align-items: center;
     }
+
+    .section__foreword--start-1280 {
+        align-self: start;
+    }
+
+    .section__foreword--center-1280 {
+        align-self: center;
+    }
 }
 
 @media (max-width: 720px) {
+    .section__wrapper {
+        padding: 50px 16px;
+    }
+
     .section__wrapper--wide {
         gap: 0;
         padding: 50px 16px;
+    }
+
+    .section__left {
+        align-items: center;
     }
 
     .section__right {
@@ -136,13 +176,38 @@
         line-height: 125%;
     }
 
+    .section__foreword--start-720 {
+        align-self: start;
+    }
+
+    .section__foreword--center-720 {
+        align-self: center;
+    }
+
     .section__h2 {
+        align-self: flex-start;
         font-size: 24px;
         margin-bottom: 24px;
+    }
+
+    .section__h2--mb24-720 {
+        margin-bottom: 32px;
+    }
+
+    .section__h2--mb32-720 {
+        margin-bottom: 32px;
     }
 
     .section__text {
         font-size: 16px;
         margin-bottom: 24px;
+    }
+
+    .section__list {
+        margin-bottom: 32px;
+    }
+
+    .section__list__item {
+        align-items: flex-start;
     }
 }
