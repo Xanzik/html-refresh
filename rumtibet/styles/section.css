@@ -1,3 +1,7 @@
+.section {
+    position: relative;
+}
+
 .section--primary {
     background: none;
 }

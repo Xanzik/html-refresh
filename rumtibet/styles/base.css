@@ -52,11 +52,13 @@
     --foreword-color: #f2be22;
     --text-color: #18121e;
     --text-section-list-color: #000;
+    --text-footer: #fff;
     --bg-button-primary: #1a3e3e;
     --bg-section-secondary: #f3f5f4;
     --bg-transparent: rgba(253, 253, 253, 0.4);
     --bg-transparent-price: rgba(255, 255, 255, 0.3);
     --bg-transparent-course: rgba(255, 255, 255, 0.2);
+    --bg-transparent-form: 0 0 15px 0 rgba(24, 18, 30, 0.12);
 
     --blur-md: blur(4px);
     --blur-lg: blur(6px);

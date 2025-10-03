@@ -236,6 +236,90 @@
     width: 100%;
 }
 
+.subscription-form {
+    display: flex;
+    position: absolute;
+    max-width: 1180px;
+    width: 100%;
+    padding: 40px 100px;
+    border-radius: 6px;
+    bottom: -202px;
+    box-shadow: var(--bg-transparent-form);
+    background: var(--main-color);
+}
+
+.subscription-form__left {
+    max-width: 380px;
+}
+
+.subscription-form__foreword {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 111%;
+    color: var(--foreword-color);
+    margin-bottom: 8px;
+}
+
+.subscription-form__h2 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 120%;
+    color: var(--text-color);
+}
+
+.subscription-form__right {
+    display: flex;
+    flex-direction: column;
+    max-width: 536px;
+}
+
+.subscription-form__right-container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.subscription-form__label {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.subscription-form__input {
+    display: block;
+    background: var(--bg-section-secondary);
+    border: none;
+    width: 280px;
+    height: 44px;
+    border-radius: 4px;
+    padding: 0px 16px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--text-color);
+}
+
+.subscription-form__text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    color: var(--text-color);
+}
+
+.subscription-form__text a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--text-color);
+}
+
 @media (max-width: 1280px) {
     .button-center-1280 {
         align-self: center;
@@ -253,6 +337,30 @@
         overflow-x: auto;
         overflow-y: hidden;
         flex-wrap: nowrap;
+    }
+
+    .subscription-form {
+        position: relative;
+        flex-direction: column;
+        bottom: 0;
+        margin: 50px auto 0;
+        height: auto;
+        max-width: 358px;
+        padding: 24px;
+    }
+
+    .subscription-form__h2 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .subscription-form__right-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subscription-form__input {
+        width: 310px;
     }
 }
 
