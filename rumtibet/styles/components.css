@@ -244,6 +244,7 @@
     padding: 40px 100px;
     border-radius: 6px;
     bottom: -202px;
+    justify-content: space-between;
     box-shadow: var(--bg-transparent-form);
     background: var(--main-color);
 }
@@ -279,7 +280,7 @@
 .subscription-form__right-container {
     display: flex;
     gap: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .subscription-form__label {
@@ -357,6 +358,7 @@
     .subscription-form__right-container {
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: 24px;
     }
 
     .subscription-form__input {
